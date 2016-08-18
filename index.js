@@ -7,7 +7,7 @@
 
 'use strict'
 
-module.exports = typeof global === 'object' && global.Promise
-  || typeof window === 'object' && window.Promise
-  || typeof Promise !== 'undefined' && Promise
-  || false;
+module.exports = typeof global === 'object' && global.Promise ||
+  typeof window === 'object' && window.Promise ||
+  typeof Promise !== 'undefined' && Promise ||
+  false
